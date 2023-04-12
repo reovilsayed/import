@@ -28,12 +28,11 @@ class CreateUser extends Command
      */
     public function handle()
     {
-        $rand = rand(1,1000);
-        $email = 'sayed'.$rand.'@mail.com';
+        $email = rand(1,100).'@gmail.com';
         User::create([
-            'name'=>'sayed',
+            'name'=>'sayed khan',
             'email'=>$email,
-            'password'=>'123445'
+            'password'=>'s12345678',
         ]);
     }
 }
